@@ -1,0 +1,165 @@
+.page{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.page .page-header{
+    margin: 30px 0px;
+    font-weight: bold;
+    font-size: max(3vh, 16px);
+    align-self: center;
+}
+
+.page .page-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page .page-content .book-form{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page .page-content .book-form .book-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.page .page-content .book-form .book-content .input{
+    gap: 10px;
+}
+
+.page .page-content .book-form .book-content label{
+    font-size: 24px;
+}
+
+.page .page-content .book-form .book-content input{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 20px;
+    width: 300px;
+    height: 30px;
+}
+
+#BookTitle{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#BookAuthor{
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+#BookPage{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#BookAuthorAddress{
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+#BookPrice{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#BookPublisher{
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+#BookGenre{
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+#BookPublishDate{
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+#BookPicture{
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.page .page-content .book-form .book-content .input .genre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .page-content .book-form .book-content .input .genre a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 24px;
+    background-color: #022B3A;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.page .page-content .book-form .book-content .input .genrelist{
+    display: grid;
+    border: black solid;
+    border-width: 1px;
+    height: 80px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    grid-template-columns: 1fr 1fr;
+}
+
+.page .page-content .book-form .book-content .input .genrelist a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.page .page-content .book-form .book-content .input .genrelist a:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+.page .page-content .book-form .book-content .input .genrelist a input{
+    width: 20px;
+}
+.page .page-content .book-form .book-content .input #file{
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-color: transparent;
+    border-radius: 20px;
+    background-color: #022B3A;
+    color: white;
+}
+
+#back-button{
+    color: white;
+    background-color: #022B3A;
+}
+
+#dateinput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

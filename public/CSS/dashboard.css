@@ -1,0 +1,161 @@
+body{
+    overflow: hidden;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: min(8vh, 60px);
+    margin-left: min(6vh, 65px);
+    margin-right: min(6vh, 65px);
+
+}
+
+.page-header .genre-list {
+    display: flex;
+}
+
+.page-header .genre-list .genre-content {
+    width: 20vh;
+    height: min(10vh, 30px);
+    margin: 0;
+    padding: 0;
+
+    background-color: white;
+}
+
+.page-header .search-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.page-header .search-box input {
+    height: min(10vh, 28px);
+    width: min(60vh, 300px);
+    padding: 0 0 0 20px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.filter-menu {
+    position: relative;
+    margin-left: 10px;
+}
+
+.filter-icon {
+    cursor: pointer;
+    width: 20px;
+    position: relative;
+}
+
+.filter-dropdown {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 10;
+}
+
+.filter-dropdown li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    list-style: none;
+}
+
+.filter-dropdown li:hover {
+    background-color: #f2f2f2;
+}
+
+.filter-dropdown label {
+    display: block;
+    color: black;
+}
+
+.page-header .search-box .filter-menu .filter-dropdown li .left{
+    width: 30%;
+}
+
+.page-header .search-box .filter-menu .filter-dropdown li .right {
+    width: 70%;
+  }
+
+.filter-dropdown label:hover {
+    background-color: #f2f2f2;
+}
+
+.filter-menu:hover .filter-dropdown {
+    display: flex;
+}
+
+.page-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+
+    margin-top: min(8vh, 60px);
+    margin-left: min(6vh, 60px);
+    margin-right: min(6vh, 60px);
+}
+
+.page-content .book-card{
+    width: 340px;
+    height: 240px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+
+    border: none;
+
+    background-color: #022B3A;
+}
+
+.page-content .book-card .book-picture{
+    width: 135px;
+    height: 200px;
+
+}
+
+.page-content .book-card .book-content{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+    color: white;
+}
+
+#all-genre-content{
+    color: white;
+    background-color: #022B3A;
+    border-color: #022B3A;
+}
+
+#admin-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(30vh, 120px);
+    height: min(15vh, 40px);
+    font-size: min(2vw, 16px);
+    color: white;
+    background-color: #022B3A;
+    border-color: #022B3A;
+    cursor: pointer;
+
+}
